@@ -1,0 +1,14 @@
+1-command d'initialisation du projet
+
+git init
+git add .
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/samra-git/P4_ohmyfood.git
+git push -u origin main
+
+2-command après démarrage du projet
+git status
+git add .
+git commit -m "commentaire lié à la tâche terminée"
+git push -u origin main
