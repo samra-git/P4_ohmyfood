@@ -1,5 +1,104 @@
-* {
+*,
+::before,
+::after {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto";
 }
 
-/*# sourceMappingURL=styles.css.map */
+@media (max-width: 768px) {
+  /***HEADER***/
+  header {
+    text-align: center;
+  }
+  header h1 {
+    font-family: "Shrikhand", cursive;
+    padding: 13px 89px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+  }
+  /***LOCALISATION***/
+  .locate {
+    background-color: #EAEAEA;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .locate input {
+    border: none;
+    padding-left: 17px;
+    font-weight: 500;
+    background-color: #EAEAEA;
+  }
+  .locate ::placeholder {
+    font-weight: 500;
+    font-size: 16px;
+    color: black;
+  }
+  /***RESERVATION***/
+  .reservation {
+    background-color: #F6F6F6;
+  }
+  .reservation div {
+    display: flex;
+    justify-content: center;
+  }
+  .reservation__title {
+    padding-top: 39px;
+    padding-left: 42px;
+    padding-right: 58px;
+    text-align: center;
+  }
+  .reservation__txt {
+    font-weight: 300;
+    font-size: 18px;
+    padding: 0 26px 27px 34px;
+    text-align: center;
+  }
+  .reservation__btn a {
+    background: linear-gradient(0deg, #9356DC, #FF79DA);
+    border: none;
+    border-radius: 25px;
+    color: white;
+    width: 218px;
+    height: 50px;
+    padding: 13px 18px;
+    margin: 0 75px 57px 82px;
+    text-decoration: none;
+  }
+  /***FONCTIONNEMENT***/
+  .fonction {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+  }
+  .fonction h2 {
+    padding: 48px 80px 0 20px;
+  }
+  .fonction__title {
+    width: 100%;
+  }
+  .fonction h3 {
+    background-color: #F6F6F6;
+    width: 322px;
+    height: 72px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  }
+  .fonction__general {
+    padding: 0 20px 68px 32px;
+  }
+  .fonction p {
+    width: 24px;
+    height: 24px;
+    font-size: 14px;
+    border-radius: 20px;
+    color: white;
+    background-color: #9356DC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
