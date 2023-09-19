@@ -4,9 +4,7 @@ $color-tertiary: #99E2D0;
 $bg-grey: #EAEAEA;
 $bg-secondary-grey:#F6F6F6;
 
-*,
-::before,
-::after {
+* {
     box-sizing: border-box ;
     margin:0;
     padding:0;
@@ -99,6 +97,7 @@ $bg-secondary-grey:#F6F6F6;
             flex-direction: column;
             justify-content: center;
             gap:20px;
+            
 
                 h2 {
                 padding: 48px 80px 0 20px;
