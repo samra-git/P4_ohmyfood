@@ -8,7 +8,7 @@ $bg-secondary-grey:#F6F6F6;
     box-sizing: border-box ;
     margin:0;
     padding:0;
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
 }
 
 
@@ -45,6 +45,7 @@ $bg-secondary-grey:#F6F6F6;
                     font-weight: 500;
                     font-size: 16px;
                     color: black;
+                    
                 }
 
         }
@@ -73,6 +74,9 @@ $bg-secondary-grey:#F6F6F6;
             }
 
             &__btn {
+                display: flex;
+                justify-content: center;
+                align-items: center;
 
              a {
                 background: linear-gradient(0deg, $color-primary,$color-secondary);
@@ -96,27 +100,34 @@ $bg-secondary-grey:#F6F6F6;
             display: flex;
             flex-direction: column;
             justify-content: center;
-            gap:20px;
             
-
                 h2 {
-                padding: 48px 80px 0 20px;
+                padding: 48px 80px 20px 20px;
                 }
 
                 &__title {
                     width: 100%;
-
                 }
+
                 h3 {
                 background-color: $bg-secondary-grey;
-                width: 322px;
+                width: 100%;
                 height: 72px;
                 border-radius: 20px;
                 box-shadow:0px 4px 15px rgba(0,0,0,0.15);
-                        
+                display: flex;
+                align-items: center;
+                font-size: 16px;
+                gap:20px;
+                padding-left: 34px;       
                 }
+
                 &__general {
                         padding: 0 20px 68px 32px;
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        gap:30px;
                 }
 
                 p {
@@ -128,12 +139,135 @@ $bg-secondary-grey:#F6F6F6;
                         background-color: $color-primary;
                         display: flex;
                         justify-content: center;
-                        align-items: center;
-                    
+                        align-items: center;  
+                }
+
+                &__subtitle {
+                    position: relative;
+                    width: 100%;
+                }
+                &__number {
+                    position:absolute;
+                        left:-8px;
+                        top:24px;
+                }
+
+                i {
+                    color: grey;
+                }
+
+                i:hover {
+                    color: $color-primary;
                 }
         }
+            /***RESTAURANT***/
+
+        .restaurant {
+            background-color: $bg-secondary-grey;
+
+            h2 {
+                padding: 50px 20px 20px 20px;
+                font-weight: 700;
+                font-size: 24px;
+            }
+
+            &__cards{
+                display: flex;
+                flex-direction: column;
+                padding: 0 20px 66px 20px;
+                gap:18px;
+
+            }
+
+            .card {
+                width: 100%;
+                background-color: white;
+                border-radius: 15px;
+                box-sizing:content-box;
+            }
+
+            &__new {
+                position: relative;
+            }
+
+             span {
+                    background-color: $color-tertiary;
+                    padding: 7px 9px;
+                    color:#008706;
+                    font-weight: 500;
+                    font-size: 14px;
+                    position: absolute;
+                    right:12px;
+                    top:10px;
+                }
+
+            .card img {
+                width: 100%;
+                height: 231px;
+                border-radius: 15px 15px 0 0;
+                object-fit: cover;
+                
+            }
+
+            .content {
+                display: flex;
+                justify-content: space-between;
+                padding: 12px 25px 12px 13px;
+            }
+
+            h3 {
+             font-weight: 700;
+             font-size: 18px;   
+            }
+
+            p{
+             font-weight: 300;
+             font-size: 17px;   
+            }
+
+            i {
+                color:#353535;
+                
+            }
+            
+        }
+
+        /**FOOTER***/
+        footer {
+            background-color: #353535;
+            color:white;
+            padding: 22px 25px;
+            
+            h3 {
+                font-family:'Shrikhand', cursive;
+                font-weight: 300;
+                padding-bottom: 16px;
+                
+            }
+
+            a {
+                display: block;
+                color:white;
+                text-decoration: none;
+                font-weight: 300;
+                display: flex;
+                gap: 10px;
+                
+                
+            }
+            .infofooter {
+                display: flex;
+                flex-direction: column;
+                gap:7px;
+            }
+        }
+                
+
+       
         
+    }
 
             
-    }
+     
+    
     
