@@ -79,7 +79,7 @@ $bg-secondary-grey:#F6F6F6;
                 align-items: center;
 
              a {
-                background: linear-gradient(0deg, $color-primary,$color-secondary);
+                background-image: linear-gradient(0deg, $color-primary,$color-secondary);
                 border:none; 
                 border-radius: 25px;
                 color:white;
@@ -88,8 +88,13 @@ $bg-secondary-grey:#F6F6F6;
                 padding: 13px 18px;
                 margin: 0 75px 57px 82px;
                 text-decoration: none;
-            
-                }
+            }
+
+            :hover {
+                box-shadow: 0px 2px 2px rgba(0,0,0,0.15);
+                opacity:0.8;
+             }
+
             }
 
         }
@@ -225,9 +230,28 @@ $bg-secondary-grey:#F6F6F6;
              font-size: 17px;   
             }
 
+            .rating {
+                position: relative;
+            }
+
             i {
                 color:#353535;
-                
+                position:absolute;
+                right:10px;
+            }
+
+            .fa-solid {
+                opacity: 0;
+                transition: all 300ms ease-in-out;
+            }
+
+            .fa-solid:hover {
+                opacity: 1;
+                background: linear-gradient($color-primary,$color-secondary);
+                color:transparent;
+                -webkit-background-clip: text;
+                background-clip: text;
+
             }
             
         }
@@ -262,12 +286,4 @@ $bg-secondary-grey:#F6F6F6;
             }
         }
                 
-
-       
-        
-    }
-
-            
-     
-    
-    
+   }
