@@ -1,0 +1,29 @@
+/**FOOTER***/
+footer {
+    background-color: #353535;
+    color:white;
+    padding: 22px 25px;
+    
+    h3 {
+        font-family:'Shrikhand', cursive;
+        font-weight: 300;
+        padding-bottom: 16px;
+        
+    }
+
+    a {
+        display: block;
+        color:white;
+        text-decoration: none;
+        font-weight: 300;
+        display: flex;
+        gap: 10px;
+        
+        
+    }
+    .infofooter {
+        display: flex;
+        flex-direction: column;
+        gap:7px;
+    }
+}
