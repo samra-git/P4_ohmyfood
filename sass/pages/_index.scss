@@ -57,6 +57,7 @@
 
          
         }
+        
 
     }
 
@@ -80,13 +81,15 @@
             width: 100%;
             height: 72px;
             border-radius: 20px;
-            box-shadow:0px 4px 15px rgba(0,0,0,0.15);
             display: flex;
             align-items: center;
             font-size: 16px;
             gap:20px;
-            padding-left: 34px;       
+            padding-left: 34px;     
+            box-shadow:0px 4px 15px rgba(0,0,0,0.15);
             }
+           
+            
 
             &__general {
                     padding: 0 20px 68px 32px;
@@ -143,6 +146,8 @@
             padding: 0 20px 66px 20px;
             gap:18px;
 
+            
+
         }
 
         .card {
@@ -191,9 +196,7 @@
          font-size: 17px;   
         }
 
-        .rating {
-            position: relative;
-        }
+        
 
         i {
             color:#353535;

@@ -1,0 +1,102 @@
+
+
+//Media query mobile first//
+@media (max-width: 768px) {
+
+header {
+    position: relative;
+    .return i {
+        position: absolute;
+        left:45px;
+        top: 20px;
+        color: black;
+        
+    }
+}
+.picture img {
+    height: 275px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.main {
+    border-radius: 25px 25px 0 0;
+    padding-top: 32px;
+    padding-bottom: 0;
+    background-color: $bg-secondary-grey;
+    position: relative;
+    top:-30px;
+    
+    .title{
+        position: relative;
+        h2 {
+        font-family: 'Shrikhand', cursive;
+        font-size: 28px;
+        font-weight: 400;
+        padding-left: 17px;
+        padding-right: 17px;
+        padding-bottom: 40px;
+    }
+        i{
+            position: absolute;
+            right:50px;
+            
+        }
+    }
+}
+
+.main_container {
+    padding: 0 13px;
+
+    h3 {
+        font-weight: 300;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        padding-bottom: 40px;
+
+        article {
+            padding: 15px;
+            background-color: white;
+            border-radius: 15px;
+            display: flex;
+            justify-content: space-between;
+            box-shadow:0px 4px 15px rgba(0,0,0,0.15);
+            
+
+            h3 {
+                font-weight: 500;
+            }
+            p{
+                font-weight: 300;
+            }
+        }
+    }
+
+    .btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        
+        a {
+            text-align: center;
+            width: 186px;
+        }
+    }
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+}
