@@ -287,6 +287,13 @@ footer .infofooter {
   .main_container h3 {
     font-weight: 300;
   }
+  .main_container h3::after {
+    content: "";
+    border-bottom: solid #99E2D0 3px;
+    display: block;
+    width: 40px;
+    padding-top: 5px;
+  }
   .main_container section {
     display: flex;
     flex-direction: column;
@@ -304,8 +311,19 @@ footer .infofooter {
   .main_container section article h3 {
     font-weight: 500;
   }
+  .main_container section article h3::after {
+    border-bottom: inherit;
+  }
   .main_container section article p {
     font-weight: 300;
+  }
+  .main_container section article .check {
+    background-color: #99E2D0;
+    display: flex;
+    align-items: center;
+  }
+  .main_container section article .check i {
+    color: white;
   }
   .main_container .btn {
     display: flex;
