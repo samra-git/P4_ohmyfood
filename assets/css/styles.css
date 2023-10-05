@@ -356,21 +356,24 @@ footer .infofooter {
     transition: all 500ms;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
     white-space: nowrap;
+    text-overflow: ellipsis;
   }
   .main_container section article:hover {
-    margin-right: 77px;
-    border-radius: 15px 0 0 15px;
+    margin-right: 10px;
     overflow: visible;
+    white-space: nowrap;
     text-overflow: ellipsis;
+  }
+  .main_container section article:hover .check {
+    width: 9vh;
   }
   .main_container section article:hover i {
     animation: rollcheck 400ms;
   }
   .main_container section article:hover h3, .main_container section article:hover p {
+    overflow: hidden;
+    white-space: nowrap;
     text-overflow: ellipsis;
-  }
-  .main_container section article:hover .menu__subtitle {
-    margin-right: -57px;
   }
   .main_container section article h3 {
     font-weight: 500;
@@ -380,6 +383,14 @@ footer .infofooter {
   }
   .main_container section article .menu__subtitle {
     padding: 15px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .main_container section article .menu__subtitle p, .main_container section article .menu__subtitle h3 {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
   }
   .main_container section article .price {
     display: flex;
@@ -400,8 +411,7 @@ footer .infofooter {
     justify-content: center;
     border-radius: 0 15px 15px 0;
     height: 100%;
-    width: 9vh;
-    margin-right: -67px;
+    width: 0;
   }
   .main_container section article .check i {
     color: white;

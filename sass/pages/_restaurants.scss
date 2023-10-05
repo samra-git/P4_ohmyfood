@@ -42,14 +42,17 @@ header {
     }
         i{
             position: absolute;
-            right:50px;
-            
+            right:50px;  
         }
     }
 }
 
 .main_container {
     padding: 0 13px;
+    //width: 100%;
+    //overflow: hidden;
+    //white-space: nowrap;
+    //text-overflow: ellipsis;
 
     h3 {
         font-weight: 300;        
@@ -96,26 +99,34 @@ header {
             transition: all 500ms;
             @include card-shadow;
             white-space: nowrap;
+            text-overflow: ellipsis;
             
             
             
             &:hover {
-                margin-right: 77px;
-                border-radius:15px 0 0 15px;
+                margin-right: 10px;
                 overflow: visible;
+                white-space: nowrap;
                 text-overflow: ellipsis;
+
+                .check {
+                    width: 9vh;
+                }
+                
 
                 i{
                     animation: rollcheck 400ms;
                 }
 
                 h3,p {
-                    //white-space: nowrap;
+                    overflow: hidden;
+                    white-space: nowrap;
                     text-overflow:ellipsis;  
+                    
                 }
 
                 .menu__subtitle {
-                    margin-right: -57px;
+                    //margin-right: -88px;   
                     
                 }
                              
@@ -133,6 +144,15 @@ header {
 
             .menu__subtitle {
                 padding:15px;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow:ellipsis;  
+
+                p, h3{
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                }
    
             }
 
@@ -160,8 +180,8 @@ header {
                 justify-content: center;
                 border-radius: 0 15px 15px 0;
                 height: 100%;
-                width: 9vh;
-                margin-right: -67px;
+                width: 0;
+                //margin-right: -75px;
 
                 i {                    
                     color:white;
