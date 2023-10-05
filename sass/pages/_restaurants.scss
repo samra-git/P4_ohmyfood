@@ -5,6 +5,72 @@
 
 @media (max-width: 768px) {
 
+
+.loader {
+    position:fixed;
+    top:0;
+    left:0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    background:white;
+    color:$color-tertiary;
+    font-size: 50px;
+    opacity: 0.9;
+    animation: disappear 100ms 3s forwards;
+    transform-origin: bottom;
+    
+    span {
+        font-family: 'Shrikhand', cursive;
+        animation: moveup 1s linear infinite;
+    }
+
+    span:nth-child(1) {
+        animation:moveup 1s 100ms linear infinite ;
+        color: $color-primary;
+    }
+    span:nth-child(2) {
+        animation:moveup 1s 200ms linear infinite ;
+        color: $color-primary;
+    }
+    span:nth-child(3) {
+        animation:moveup 1s 300ms linear infinite ;
+        color:$color-secondary;
+    }
+    span:nth-child(4) {
+        animation:moveup 1s 400ms linear infinite ;
+        color:$color-secondary;
+    }
+    span:nth-child(5) {
+        animation:moveup 1s 500ms linear infinite ;
+    }
+    span:nth-child(6) {
+        animation:moveup 1s 600ms linear infinite ;
+    }
+    span:nth-child(7) {
+        animation:moveup 1s 700ms linear infinite ;
+    }
+    span:nth-child(8) {
+        animation:moveup 1s 800ms linear infinite ;
+    }
+    span:nth-child(9) {
+        animation:moveup 1s 900ms linear infinite ;
+    }
+    span:nth-child(10) {
+        animation:moveup 1s 1s linear infinite ;
+    }
+    span:nth-child(11) {
+        animation:moveup 1s 1100ms linear infinite ;
+    }
+
+    
+    
+
+
+}
 header {
     position: relative;
     .return i {
@@ -32,6 +98,7 @@ header {
     
     .title{
         position: relative;
+       
         h2 {
         font-family: 'Shrikhand', cursive;
         font-size: 28px;
@@ -75,15 +142,15 @@ header {
         //animation: showmenu 3s 1s both;
 
         &:nth-child(1){
-            animation:showmenu 1s 1s both;
+            animation:showmenu 1s 3s both;
         }
 
         &:nth-child(2) {
-            animation:showmenu 2s 1s both;
+            animation:showmenu 2s 3s both;
         }
 
         &:nth-child(3) {
-            animation:showmenu 3s 1s both;
+            animation:showmenu 3s 3s both;
         }
 
         
@@ -125,11 +192,7 @@ header {
                     
                 }
 
-                .menu__subtitle {
-                    //margin-right: -88px;   
-                    
-                }
-                             
+                        
             }
             
             
@@ -181,15 +244,10 @@ header {
                 border-radius: 0 15px 15px 0;
                 height: 100%;
                 width: 0;
-                //margin-right: -75px;
-
+                
                 i {                    
                     color:white;
-                    &:hover{
-                       
-                     
-                            
-                    }  
+                    
                 }
             }
 

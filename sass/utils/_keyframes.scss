@@ -12,3 +12,29 @@
         opacity: 1;
         transform: scale(1);}
 }
+
+@keyframes moveup {
+    0% {
+        transform: translateY(10px);
+    }
+    50% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(10px);
+    }
+}
+
+@keyframes disappear {
+    0% { 
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0);
+        opacity: 0;
+        width: 0;
+        
+    }
+    
+}
