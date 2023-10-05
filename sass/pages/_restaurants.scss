@@ -1,6 +1,8 @@
-
+@import '../utils/mixins';
+@import '../utils/keyframes';
 
 //Media query mobile first//
+
 @media (max-width: 768px) {
 
 header {
@@ -17,15 +19,16 @@ header {
     height: 275px;
     width: 100%;
     object-fit: cover;
+    object-position: center 70%;
 }
 
-.main {
+.main-restaurant {
     border-radius: 25px 25px 0 0;
     padding-top: 32px;
     padding-bottom: 0;
     background-color: $bg-secondary-grey;
     position: relative;
-    top:-30px;
+    margin-top: -30px;
     
     .title{
         position: relative;
@@ -66,24 +69,84 @@ header {
         gap: 12px;
         padding-bottom: 40px;
 
-    
+        //animation: showmenu 3s 1s both;
+
+        &:nth-child(1){
+            animation:showmenu 1s 1s both;
+        }
+
+        &:nth-child(2) {
+            animation:showmenu 2s 1s both;
+        }
+
+        &:nth-child(3) {
+            animation:showmenu 3s 1s both;
+        }
+
+        
 
         article {
-            padding: 15px;
+            padding: 0;
             background-color: white;
             border-radius: 15px;
             display: flex;
-            justify-content: space-between;
-            box-shadow:0px 4px 15px rgba(0,0,0,0.15);
+            justify-content: space-between; 
+            cursor: pointer;
+            overflow: hidden;
+            transition: all 500ms;
+            @include card-shadow;
+            white-space: nowrap;
+            
+            
+            
+            &:hover {
+                margin-right: 77px;
+                border-radius:15px 0 0 15px;
+                overflow: visible;
+                text-overflow: ellipsis;
+
+                i{
+                    animation: rollcheck 400ms;
+                }
+
+                h3,p {
+                    //white-space: nowrap;
+                    text-overflow:ellipsis;  
+                }
+
+                .menu__subtitle {
+                    margin-right: -57px;
+                    
+                }
+                             
+            }
+            
             
 
             h3 {
                 font-weight: 500;
                 
-
                 &::after {
                     border-bottom: inherit;
                 }
+            }
+
+            .menu__subtitle {
+                padding:15px;
+   
+            }
+
+            .price {
+                display: flex;
+                align-items: flex-end;
+    
+                
+                 p {
+                    font-weight: 500;
+                    padding-bottom: 15px;
+                    margin-right: 20px;
+                 }
+            
             }
         
             p{
@@ -94,11 +157,22 @@ header {
                 background-color: $color-tertiary;
                 display: flex;
                 align-items: center;
+                justify-content: center;
+                border-radius: 0 15px 15px 0;
+                height: 100%;
+                width: 9vh;
+                margin-right: -67px;
 
                 i {                    
                     color:white;
+                    &:hover{
+                       
+                     
+                            
+                    }  
                 }
             }
+
         }
     }
 

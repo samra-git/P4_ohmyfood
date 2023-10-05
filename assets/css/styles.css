@@ -4,7 +4,8 @@
   padding: 0;
   font-family: "Roboto", sans-serif;
 }
-* a {
+
+a {
   text-decoration: none;
   color: black;
 }
@@ -44,6 +45,24 @@ footer .infofooter {
   gap: 7px;
 }
 
+@keyframes rollcheck {
+  0% {
+    transform: rotate(-270deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes showmenu {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
 @media (max-width: 768px) {
   /***LOCALISATION***/
   .locate {
@@ -218,11 +237,9 @@ footer .infofooter {
   transition: all 400ms ease-in-out;
 }
 
-.btn a:hover,
-.btn a:focus {
-  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
-  opacity: 0.6;
-  transform: scale(1.05);
+.btn a:hover {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.55);
+  opacity: 0.8;
 }
 
 .rating {
@@ -243,6 +260,24 @@ footer .infofooter {
   background-clip: text;
 }
 
+@keyframes rollcheck {
+  0% {
+    transform: rotate(-270deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes showmenu {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
 @media (max-width: 768px) {
   header {
     position: relative;
@@ -257,19 +292,20 @@ footer .infofooter {
     height: 275px;
     width: 100%;
     object-fit: cover;
+    object-position: center 70%;
   }
-  .main {
+  .main-restaurant {
     border-radius: 25px 25px 0 0;
     padding-top: 32px;
     padding-bottom: 0;
     background-color: #F6F6F6;
     position: relative;
-    top: -30px;
+    margin-top: -30px;
   }
-  .main .title {
+  .main-restaurant .title {
     position: relative;
   }
-  .main .title h2 {
+  .main-restaurant .title h2 {
     font-family: "Shrikhand", cursive;
     font-size: 28px;
     font-weight: 400;
@@ -277,7 +313,7 @@ footer .infofooter {
     padding-right: 17px;
     padding-bottom: 40px;
   }
-  .main .title i {
+  .main-restaurant .title i {
     position: absolute;
     right: 50px;
   }
@@ -300,19 +336,59 @@ footer .infofooter {
     gap: 12px;
     padding-bottom: 40px;
   }
+  .main_container section:nth-child(1) {
+    animation: showmenu 1s 1s both;
+  }
+  .main_container section:nth-child(2) {
+    animation: showmenu 2s 1s both;
+  }
+  .main_container section:nth-child(3) {
+    animation: showmenu 3s 1s both;
+  }
   .main_container section article {
-    padding: 15px;
+    padding: 0;
     background-color: white;
     border-radius: 15px;
     display: flex;
     justify-content: space-between;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 500ms;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+    white-space: nowrap;
+  }
+  .main_container section article:hover {
+    margin-right: 77px;
+    border-radius: 15px 0 0 15px;
+    overflow: visible;
+    text-overflow: ellipsis;
+  }
+  .main_container section article:hover i {
+    animation: rollcheck 400ms;
+  }
+  .main_container section article:hover h3, .main_container section article:hover p {
+    text-overflow: ellipsis;
+  }
+  .main_container section article:hover .menu__subtitle {
+    margin-right: -57px;
   }
   .main_container section article h3 {
     font-weight: 500;
   }
   .main_container section article h3::after {
     border-bottom: inherit;
+  }
+  .main_container section article .menu__subtitle {
+    padding: 15px;
+  }
+  .main_container section article .price {
+    display: flex;
+    align-items: flex-end;
+  }
+  .main_container section article .price p {
+    font-weight: 500;
+    padding-bottom: 15px;
+    margin-right: 20px;
   }
   .main_container section article p {
     font-weight: 300;
@@ -321,6 +397,11 @@ footer .infofooter {
     background-color: #99E2D0;
     display: flex;
     align-items: center;
+    justify-content: center;
+    border-radius: 0 15px 15px 0;
+    height: 100%;
+    width: 9vh;
+    margin-right: -67px;
   }
   .main_container section article .check i {
     color: white;
@@ -337,6 +418,24 @@ footer .infofooter {
   .title {
     display: flex;
     justify-content: space-between;
+  }
+}
+@keyframes rollcheck {
+  0% {
+    transform: rotate(-270deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes showmenu {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
   }
 }
 

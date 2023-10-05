@@ -1,3 +1,6 @@
+@import '../utils/mixins';
+@import '../utils/keyframes';
+
 //Media query mobile first//
 @media (max-width: 768px) {
 
@@ -86,7 +89,7 @@
             font-size: 16px;
             gap:20px;
             padding-left: 34px;     
-            box-shadow:0px 4px 15px rgba(0,0,0,0.15);
+            @include card-shadow;
             }
            
             
