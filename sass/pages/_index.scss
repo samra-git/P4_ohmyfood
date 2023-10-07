@@ -2,7 +2,7 @@
 @import '../utils/keyframes';
 
 //Media query mobile first//
-@media (max-width: 768px) {
+
 
        
     /***LOCALISATION***/
@@ -12,6 +12,15 @@
         display: flex;
         justify-content: center;
         align-items: center;
+
+        /*@media (min-width:768px){
+            display: flex;
+
+            justify-content: center;
+            align-items: center;
+        
+        }*/
+        
         
         
         input {
@@ -71,6 +80,16 @@
         flex-direction: column;
         justify-content: center;
 
+        @media (min-width:1024px) {
+            padding: 0 50px;
+        }
+        @media (min-width:1440px) {
+            padding:0 180px;
+        }
+
+    
+
+       
         
             h2 {
             padding: 48px 80px 20px 20px;
@@ -101,6 +120,13 @@
                     display: flex;
                     flex-direction: column;
                     gap:30px;
+
+                    @media (min-width:1024px) {
+                        display: flex;
+                        flex-direction: row;
+                    }
+
+                    
 
                
             }
@@ -139,6 +165,13 @@
 
     .restaurant {
         background-color: $bg-secondary-grey;
+        @media (min-width:1024px) {
+            padding: 0 50px;
+        }
+
+        @media (min-width:1440px) {
+            padding: 0 180px;
+        }
 
         h2 {
             padding: 50px 20px 20px 20px;
@@ -151,6 +184,14 @@
             flex-direction: column;
             padding: 0 20px 66px 20px;
             gap:18px;
+            
+
+            @media (min-width:1024px) {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+
+            }
 
             
 
@@ -161,6 +202,8 @@
             background-color: white;
             border-radius: 15px;
             box-sizing:content-box;
+
+           
         }
 
         &__new {
@@ -215,6 +258,11 @@
     }
 
     
-}
+
+
+
+
+
+
             
 

@@ -3,11 +3,23 @@ footer {
     background-color: #353535;
     color:white;
     padding: 22px 25px;
+
+    @media (min-width:1024px) {
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 30px 25px;
+        height: 114px;
+        gap:80px;
+        align-items: flex-end;
+    }
     
     h3 {
         font-family:'Shrikhand', cursive;
         font-weight: 300;
         padding-bottom: 16px;
+        @media (min-width:1024px) {
+            padding: inherit;
+        }
         
     }
 
@@ -25,5 +37,10 @@ footer {
         display: flex;
         flex-direction: column;
         gap:7px;
+
+        @media (min-width:1024px) {
+            flex-direction: row;
+            gap:20px;
+        }
     }
 }
