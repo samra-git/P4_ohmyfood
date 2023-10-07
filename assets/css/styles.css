@@ -399,7 +399,7 @@ footer .infofooter {
   background: white;
   color: #99E2D0;
   font-size: 50px;
-  opacity: 0.9;
+  opacity: 1;
   animation: disappear 100ms 3s forwards;
   transform-origin: bottom;
 }
@@ -509,7 +509,7 @@ header .return i {
 @media (min-width: 1024px) {
   .main-restaurant .title i {
     top: 5px;
-    left: 30px;
+    right: -60px;
   }
 }
 

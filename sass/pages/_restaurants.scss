@@ -19,7 +19,7 @@
     background:white;
     color:$color-tertiary;
     font-size: 50px;
-    opacity: 0.9;
+    opacity: 1;
     animation: disappear 100ms 3s forwards;
     transform-origin: bottom;
     
@@ -128,7 +128,8 @@ header {
             right:50px; 
             @media (min-width:1024px) {
                 top:5px;
-                left:30px;
+                right:-60px;
+                
             }
         }
     }
@@ -136,13 +137,7 @@ header {
 
 .main_container {
     padding: 0 13px;
-    //width: 100%;
-    //overflow: hidden;
-    //white-space: nowrap;
-    //text-overflow: ellipsis;
-
     
-
     h3 {
         font-weight: 300;        
     
@@ -161,7 +156,6 @@ header {
         gap: 12px;
         padding-bottom: 40px;
 
-        //animation: showmenu 3s 1s both;
 
         &:nth-child(1){
             animation:showmenu 1s 3s both;
