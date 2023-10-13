@@ -1,6 +1,6 @@
 # Oh my food !
 Quatrième projet du parcours "Développeur Intégrateur web" chez OpenClassroom.
-L'objectif est d'intégrer la maquette d'une jeune star-up nommée "Ohmyfood" permettant la commande de repas gastronomique auprès de grands restaurants, le tout en ligne (prototypeen suivant le liens ci-contre).
+L'objectif est d'intégrer la maquette d'une jeune star-up nommée "Ohmyfood" permettant la commande de repas gastronomique auprès de grands restaurants, le tout en ligne (prototype en suivant le lien ci-contre).
 (https://www.figma.com/proto/t4449fzDnwGYmzuwQdu87V/Maquettes-Ohmyfood-(mobile-et-desktop)?node-id=25368-591&scaling=scale-down&page-id=0%3A1&starting-point-node-id=25368%3A591&show-proto-sidebar=1)
 
 ### Visualiser le site ici 
