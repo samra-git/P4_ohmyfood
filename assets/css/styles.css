@@ -112,13 +112,6 @@ footer .infofooter {
   display: flex;
   justify-content: center;
   align-items: center;
-  /*@media (min-width:768px){
-      display: flex;
-
-      justify-content: center;
-      align-items: center;
-
-  }*/
 }
 .locate input {
   border: none;
@@ -502,6 +495,11 @@ header .return i {
     padding-left: inherit;
   }
 }
+@media (max-width: 380px) {
+  .main-restaurant .title h2 {
+    margin-right: 90px;
+  }
+}
 .main-restaurant .title i {
   position: absolute;
   right: 50px;
@@ -551,25 +549,16 @@ header .return i {
   overflow: hidden;
   transition: all 500ms;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
-  white-space: nowrap;
-  text-overflow: ellipsis;
 }
 .main_container section article:hover {
   margin-right: 10px;
   overflow: visible;
-  white-space: nowrap;
-  text-overflow: ellipsis;
 }
 .main_container section article:hover .check {
   width: 9vh;
 }
 .main_container section article:hover i {
   animation: rollcheck 400ms;
-}
-.main_container section article:hover h3, .main_container section article:hover p {
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
 }
 .main_container section article h3 {
   font-weight: 500;
@@ -580,8 +569,6 @@ header .return i {
 .main_container section article .menu__subtitle {
   padding: 15px;
   overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
 }
 .main_container section article .menu__subtitle p, .main_container section article .menu__subtitle h3 {
   overflow: hidden;

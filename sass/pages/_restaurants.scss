@@ -116,11 +116,14 @@ header {
         font-size: 28px;
         font-weight: 400;
         padding-left: 17px;
-        //padding-right: 17px;
         padding-bottom: 40px;
         @media (min-width:1024px) {
             text-align: center;
             padding-left:inherit;
+        }
+
+        @media (max-width: 380px) {
+            margin-right: 90px;
         }
         }
         i{
@@ -181,16 +184,12 @@ header {
             overflow: hidden;
             transition: all 500ms;
             @include card-shadow;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-            
+                       
             
             
             &:hover {
                 margin-right: 10px;
                 overflow: visible;
-                white-space: nowrap;
-                text-overflow: ellipsis;
 
                 .check {
                     width: 9vh;
@@ -201,12 +200,7 @@ header {
                     animation: rollcheck 400ms;
                 }
 
-                h3,p {
-                    overflow: hidden;
-                    white-space: nowrap;
-                    text-overflow:ellipsis;  
-                    
-                }
+                
 
                         
             }
@@ -224,8 +218,7 @@ header {
             .menu__subtitle {
                 padding:15px;
                 overflow: hidden;
-                white-space: nowrap;
-                text-overflow:ellipsis;  
+                 
 
                 p, h3{
                     overflow: hidden;
