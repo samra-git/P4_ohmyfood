@@ -554,6 +554,7 @@ header .return i {
 }
 .main_container section article:hover .check {
   width: 9vh;
+  transition: all 500ms;
 }
 .main_container section article:hover i {
   animation: rollcheck 400ms;
@@ -593,7 +594,6 @@ header .return i {
   border-radius: 0 15px 15px 0;
   height: 100%;
   width: 0;
-  transition: all 400ms;
 }
 .main_container section article .check i {
   color: white;

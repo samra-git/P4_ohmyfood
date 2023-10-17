@@ -193,6 +193,7 @@ header {
 
                 .check {
                     width: 9vh;
+                    transition: all 500ms;
                 }
                 
 
@@ -253,11 +254,12 @@ header {
                 border-radius: 0 15px 15px 0;
                 height: 100%;
                 width: 0;
-                transition: all 400ms;
+                //transition: all 500ms;
+                
                 
                 i {                    
                     color:white;
-                    
+                        
                 }
             }
 
