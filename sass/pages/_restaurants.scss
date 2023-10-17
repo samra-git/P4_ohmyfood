@@ -20,7 +20,7 @@
     color:$color-tertiary;
     font-size: 50px;
     opacity: 1;
-    animation: disappear 100ms 3s forwards;
+    animation: disappear 100ms 1s forwards;
     transform-origin: bottom;
     
     span {
@@ -188,7 +188,7 @@ header {
             
             
             &:hover {
-                margin-right: 10px;
+                //margin-right: 10px;
                 overflow: visible;
 
                 .check {
@@ -253,6 +253,7 @@ header {
                 border-radius: 0 15px 15px 0;
                 height: 100%;
                 width: 0;
+                transition: all 400ms;
                 
                 i {                    
                     color:white;

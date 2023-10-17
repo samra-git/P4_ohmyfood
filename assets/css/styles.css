@@ -392,7 +392,7 @@ footer .infofooter {
   color: #99E2D0;
   font-size: 50px;
   opacity: 1;
-  animation: disappear 100ms 3s forwards;
+  animation: disappear 100ms 1s forwards;
   transform-origin: bottom;
 }
 .loader span {
@@ -550,7 +550,6 @@ header .return i {
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
 }
 .main_container section article:hover {
-  margin-right: 10px;
   overflow: visible;
 }
 .main_container section article:hover .check {
@@ -594,6 +593,7 @@ header .return i {
   border-radius: 0 15px 15px 0;
   height: 100%;
   width: 0;
+  transition: all 400ms;
 }
 .main_container section article .check i {
   color: white;
